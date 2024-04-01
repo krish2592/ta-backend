@@ -109,10 +109,10 @@ const registerUser = asyncHandler(async (req, res) => {
       password: password,
     };
 
-    // const resp = await axios.post(
-    //   "https://ta-backend-plum.vercel.app/api/v1/users/login",
-    //   data
-    // );
+    const resp = await axios.post(
+      "https://ta-backend-plum.vercel.app/api/v1/users/login",
+      data
+    );
     return res.status(201).json(
       new ApiResponse(
         200,
