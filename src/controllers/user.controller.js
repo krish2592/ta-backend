@@ -110,7 +110,7 @@ const registerUser = asyncHandler(async (req, res) => {
     };
 
     const resp = await axios.post(
-      "http://localhost:8000/api/v1/users/login",
+      "https://ta-backend-plum.vercel.app/api/v1/users/login",
       data
     );
     return res.status(201).json(
